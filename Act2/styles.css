@@ -1,0 +1,29 @@
+li{
+    list-style: none;
+}
+
+.barra-navegacion{
+    flex-direction: row;
+ 
+}
+
+.barra-navegacion ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.barra-navegacion a{
+    text-decoration: none;
+    color: black;
+    font-size: large;
+}
+
+.barra-navegacion li{
+    margin:0 10%
+}
+
+.barra-navegacion a:hover {
+    color: rgb(0, 110, 255);
+}
