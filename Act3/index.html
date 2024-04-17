@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="logica.js"></script>
+    <script src="Variables-TipoDato.js"></script>
+    <script src="funciones.js"></script>
+    <script src="control.js"></script>
+    <script src="arreglos.js"></script>
+    <script src="loops.js"></script>
+    <script src="objetos.js"></script>
+    <script src="dom.js"></script>
+  </head>
+  <body>
+    <section className="logica">
+      <h1>Ejercicios de Logica</h1>
+      <section class="ejercicios">
+        <input type="text" name="" id="num1" />
+        <input type="text" name="" id="num2" />
+        <button onclick="numeroMayor()">Numero Mayor</button>
+
+        <button onclick="numeroMenor()">Numero Menor</button>
+
+        <div class="container">
+          <p id="resultado"></p>
+        </div>
+      </section>
+      <section class="ejercicios">
+        <button onclick="operacionesLogicas()">Operaciones Lógicas</button>
+        <div class="container">
+          <p id="resultadoLogicos"></p>
+        </div>
+      </section>
+    </section>
+
+    <section class="VarDatype">
+      <h1>Ejercicios de Variables y tipos de datos</h1>
+      <section class="ejercicios">
+        <button onclick="tiposVariables()">Mostrar tipos de variables</button>
+        <div class="container">
+          <div id="resultadoString"></div>
+          <div id="resultadoNumber"></div>
+          <div id="resultadoBoolean"></div>
+          <div id="resultadoNull"></div>
+          <div id="resultadoUndefined"></div>
+        </div>
+      </section>
+
+      <section class="ejercicios">
+        <input type="text" id="datoUsuario" placeholder="Ingresa un valor" />
+        <button onclick="determinarTipo()">Determinar tipo de dato</button>
+        <div class="container">
+          <p id="resultadoTipo"></p>
+        </div>
+      </section>
+    </section>
+
+    <section class="Funciones">
+      <h1>Ejercicios de funciones</h1>
+      <section class="ejercicios">
+        <div class="container2">
+          <input class="cubito" type="text" name="" id="x" />
+          <input class="cubito" type="text" name="" id="y" />
+          <input class="cubito" type="text" name="" id="z" />
+        </div>
+
+        <div class="container3">
+          <button onclick="suma()">Suma</button>
+          <button onclick="multiplica()">Multiplica</button>
+          <button onclick="strings()">Son Strings?</button>
+        </div>
+        <div class="container">
+          <p id="resultadoFunciones"></p>
+        </div>
+      </section>
+
+      <section class="ejercicios">
+        <input type="text" id="Vocal?" />
+        <button onclick="verificaVocales()">Es una Vocal?</button>
+        <div class="container">
+          <p id="resultVocal"></p>
+        </div>
+      </section>
+    </section>
+
+    <section class="Control">
+      <h1>Ejercicio de control</h1>
+      <section class="ejercicios">
+        <input type="number" name="" id="edad" placeholder="Ingresa tu edad" />
+        <button onclick="mayorDeEdad()">Es mayor de edad?</button>
+        <div class="container">
+          <p id="resultadoEdad"></p>
+        </div>
+      </section>
+    </section>
+
+    <section class="arreglos">
+      <section class="ejercicios">
+        <h2>Manejo de Arreglos</h2>
+        <input type="text" id="nombre" placeholder="Ingresa un nombre" />
+        <button onclick="agregarNombre()">Agregar nombre</button>
+        <button onclick="eliminarNombre()">Eliminar nombre</button>
+        <button onclick="buscarNombre()">Buscar nombre</button>
+        <p id="resultadoArreglo"></p>
+      </section>
+    </section>
+
+    <section class="raices">
+      <section class="ejercicios">
+        <h2>Raíces Cuadradas</h2>
+        <p>[4, 9, 16, 25, 36, 81]</p>
+        <button onclick="calcularRaices()">Calcular raíces cuadradas</button>
+        <p id="resultadoRaices"></p>
+      </section>
+    </section>
+
+    <section class="Loops">
+      <section class="ejercicios">
+        <h2>Loops</h2>
+        <button onclick="usarFor()">Usar for</button>
+        <p id="resultadoFor"></p>
+        <button onclick="usarWhile()">Usar while</button>
+        <p id="resultadoWhile"></p>
+        <button onclick="usarDoWhile()">Usar do...while</button>
+        <p id="resultadoDoWhile"></p>
+      </section>
+    </section>
+
+    <section class="objetos">
+      <h2>Objetos</h2>
+      <section class="ejercicios">
+        <input type="text" id="marca" placeholder="Ingresa la marca" />
+        <input type="text" id="modelo" placeholder="Ingresa el modelo" />
+        <input type="number" id="anio" placeholder="Ingresa el año" />
+        <button onclick="crearCoche()">Crear coche</button>
+        <button onclick="mostrarInfoCoche()">
+          Mostrar información del coche
+        </button>
+        <p id="resultadoObjeto"></p>
+      </section>
+    </section>
+
+    <section class="Dom">
+      <section class="ejercicios">
+        <h2>Manipulación del DOM y Eventos</h2>
+        <input
+          type="text"
+          id="texto"
+          placeholder="Ingresa el texto del párrafo"
+        />
+        <button onclick="cambiarTexto()">Agregar Parrafo</button>
+        <p id="parrafo">Pasa el ratón por encima de este párrafo</p>
+        <p id="parrafoNuevo"></p>
+      </section>
+    </section>
+  </body>
+</html>
